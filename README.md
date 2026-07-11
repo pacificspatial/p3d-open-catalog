@@ -1,0 +1,2 @@
+# p3d-open-catalog
+TerriaのURLパラメタを使って利用できるカタログを公開するためのリポジトリ
