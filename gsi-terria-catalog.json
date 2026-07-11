@@ -1,0 +1,68 @@
+{
+  "catalog": [
+    {
+      "name": "Noteの記事用に作った地理院タイルのカタログ（国土地理院）",
+      "type": "group",
+      "description": "国土地理院が公開する地理院タイルを、変換や複製をせずそのままTerriaのカタログに接続した例です。利用にあたっては国土地理院コンテンツ利用規約に従ってください。",
+      "isOpen": true,
+      "members": [
+        {
+          "name": "標準地図",
+          "type": "url-template-imagery",
+          "url": "https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png",
+          "attribution": "国土地理院",
+          "minimumLevel": 5,
+          "maximumLevel": 18,
+          "isOpenInWorkbench": false
+        },
+        {
+          "name": "淡色地図",
+          "type": "url-template-imagery",
+          "url": "https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png",
+          "attribution": "国土地理院",
+          "minimumLevel": 5,
+          "maximumLevel": 18,
+          "isOpenInWorkbench": false
+        },
+        {
+          "name": "写真（全国最新写真ほか、シームレス）",
+          "type": "url-template-imagery",
+          "url": "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg",
+          "attribution": "国土地理院",
+          "description": "ズームレベルにより世界衛星モザイク画像・全国ランドサットモザイク画像・全国最新写真（シームレス）を切り替えて配信。一部区域はGRUS画像（© Axelspace）等の追加出典表記が必要です。",
+          "minimumLevel": 2,
+          "maximumLevel": 18,
+          "isOpenInWorkbench": false
+        },
+        {
+          "name": "色別標高図",
+          "type": "url-template-imagery",
+          "url": "https://cyberjapandata.gsi.go.jp/xyz/relief/{z}/{x}/{y}.png",
+          "attribution": "国土地理院",
+          "description": "海域部は海上保安庁海洋情報部の資料を使用して作成。",
+          "minimumLevel": 5,
+          "maximumLevel": 15,
+          "isOpenInWorkbench": false
+        },
+        {
+          "name": "陰影起伏図",
+          "type": "url-template-imagery",
+          "url": "https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png",
+          "attribution": "国土地理院",
+          "minimumLevel": 2,
+          "maximumLevel": 16,
+          "isOpenInWorkbench": false
+        },
+        {
+          "name": "傾斜量図",
+          "type": "url-template-imagery",
+          "url": "https://cyberjapandata.gsi.go.jp/xyz/slopemap/{z}/{x}/{y}.png",
+          "attribution": "国土地理院",
+          "minimumLevel": 3,
+          "maximumLevel": 15,
+          "isOpenInWorkbench": false
+        }
+      ]
+    }
+  ]
+}
